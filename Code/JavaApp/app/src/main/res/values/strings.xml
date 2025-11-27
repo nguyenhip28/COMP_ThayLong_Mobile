@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="form_title_add_hike">Add a New Hike</string>
+    <string name="form_title_edit_hike">Edit Hike</string>
+
+    <!-- Labels for Add Hike Form -->
+    <string name="label_hike_name">Name of Hike</string>
+    <string name="label_location">Location</string>
+    <string name="label_hike_date">Date of the Hike</string>
+    <string name="label_parking">Parking Available?</string>
+    <string name="label_length">Length of Hike (km)</string>
+    <string name="label_difficulty">Difficulty Level</string>
+    <string name="label_description">Description</string>
+    <string name="label_weather">Expected Weather</string>
+    <string name="label_group_size">Group Size</string>
+
+    <!-- Hints for Add Hike Form -->
+    <string name="hint_hike_name">e.g., Snowdon</string>
+    <string name="hint_location">e.g., Trosley Country Park</string>
+    <string name="hint_hike_date">Select a date</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="hint_length">e.g., 10.5</string>
+    <string name="desc_difficulty_spinner">Select difficulty</string>
+    <string name="hint_description">(Optional)</string>
+    <string name="hint_weather">e.g., Sunny</string>
+    <string name="hint_group_size">e.g., 4</string>
+
+    <string name="btn_submit">Submit</string>
+
+    <!-- Difficulty Levels for Spinner -->
+    <string-array name="difficulty_levels">
+        <item>Easy</item>
+        <item>Normal</item>
+        <item>Hard</item>
+        <item>Very Hard</item>
+    </string-array>
+
+</resources>

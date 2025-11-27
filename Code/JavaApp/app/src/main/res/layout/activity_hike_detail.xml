@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="32dp">
+
+        <!-- Hike Details -->
+        <TextView
+            android:id="@+id/detail_hike_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hike Name"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/detail_hike_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location: "
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/detail_hike_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: "
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/detail_hike_parking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parking Available: "
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/detail_hike_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Length: "
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/detail_hike_difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Difficulty: "
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/detail_hike_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description: "
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/detail_hike_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weather: "
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/detail_hike_group_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group Size: "
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Add Observation Button -->
+        <Button
+            android:id="@+id/btnAddObservation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Observation"
+            android:layout_marginTop="24dp"/>
+
+        <!-- Observations List -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Observations"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewObservations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:nestedScrollingEnabled="false"/>
+
+    </LinearLayout>
+</ScrollView>
