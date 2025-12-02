@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".ContactListActivity">
 
-    <!-- Tiêu đề (Tuỳ chọn, có thể bỏ nếu không cần) -->
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
@@ -20,7 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- RecyclerView: Danh sách cuộn -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerContacts"
         android:layout_width="0dp"

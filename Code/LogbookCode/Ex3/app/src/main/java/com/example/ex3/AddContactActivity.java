@@ -13,16 +13,15 @@ public class AddContactActivity extends AppCompatActivity {
     ImageView imgAvatar;
     Button btnChoose, btnSave;
     int selectedAvatar = R.drawable.ic_launcher_foreground;
-// Hoặc R.drawable.ic_launcher_background
 
-    DatabaseHelper db;
+    DBConnect db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_contact);
 
-        db = new DatabaseHelper(this);
+        db = new DBConnect(this);
 
         edtName = findViewById(R.id.edtName);
         edtDob = findViewById(R.id.edtDob);

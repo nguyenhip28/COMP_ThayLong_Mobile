@@ -77,7 +77,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    // --- Hike Methods ---
     public void addHike(String name, String location, String date, int parking, double length, String difficulty, String description, String weather, int groupSize) {
         SQLiteDatabase db = getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -206,7 +205,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.close();
     }
 
-    // --- Observation Methods ---
     public void addObservation(int hikeId, String observation, String time, String comment) {
         SQLiteDatabase db = getWritableDatabase();
         ContentValues values = new ContentValues();

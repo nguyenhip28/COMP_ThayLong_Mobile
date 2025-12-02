@@ -27,6 +27,7 @@
         <activity android:name=".HikeListActivity" />
         <activity android:name=".HikeDetailActivity" />
         <activity android:name=".AddObservationActivity" />
+        <activity android:name=".EditObservationActivity" />
     </application>
 
 </manifest>

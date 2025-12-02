@@ -10,14 +10,14 @@ import java.util.ArrayList;
 public class ContactListActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    DatabaseHelper db;
+    DBConnect db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_list);
 
-        db = new DatabaseHelper(this);
+        db = new DBConnect(this);
         recyclerView = findViewById(R.id.recyclerContacts);
 
         ArrayList<Contact> list = db.getAllContacts();

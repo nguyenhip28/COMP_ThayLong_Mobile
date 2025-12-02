@@ -8,7 +8,7 @@ import android.database.Cursor;
 
 import java.util.ArrayList;
 
-public class DatabaseHelper extends SQLiteOpenHelper {
+public class DBConnect extends SQLiteOpenHelper {
 
     public static final String DB_NAME = "contacts.db";
     public static final int DB_VERSION = 1;
@@ -20,7 +20,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COL_EMAIL = "email";
     public static final String COL_AVATAR = "avatar";
 
-    public DatabaseHelper(Context context) {
+    public DBConnect(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
     }
 

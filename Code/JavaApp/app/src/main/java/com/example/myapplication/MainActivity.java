@@ -16,12 +16,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // Enable edge-to-edge display. This must be called before setContentView.
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        // This listener handles the system bars (status bar, navigation bar) and applies padding
-        // to the main view to prevent content from overlapping with them. This is crucial for EdgeToEdge.
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

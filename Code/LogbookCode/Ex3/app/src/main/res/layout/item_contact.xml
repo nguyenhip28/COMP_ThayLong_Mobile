@@ -7,7 +7,6 @@
     android:gravity="center_vertical"
     android:background="?android:attr/selectableItemBackground">
 
-    <!-- Hình ảnh Avatar -->
     <ImageView
         android:id="@+id/imgAvatar"
         android:layout_width="60dp"
@@ -16,7 +15,6 @@
         android:contentDescription="Avatar"
         android:scaleType="centerCrop" />
 
-    <!-- Thông tin chi tiết -->
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"

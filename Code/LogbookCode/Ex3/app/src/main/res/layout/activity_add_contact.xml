@@ -22,7 +22,6 @@
         android:layout_gravity="center"
         android:text="Choose Avatar" />
 
-    <!-- Đã thêm minHeight="48dp" để sửa lỗi Touch target size -->
     <EditText
         android:id="@+id/edtName"
         android:layout_width="match_parent"
@@ -31,7 +30,6 @@
         android:inputType="textPersonName"
         android:hint="Name" />
 
-    <!-- Đã thêm minHeight="48dp" -->
     <EditText
         android:id="@+id/edtDob"
         android:layout_width="match_parent"
@@ -40,7 +38,6 @@
         android:inputType="date"
         android:hint="Date of Birth" />
 
-    <!-- Đã thêm minHeight="48dp" -->
     <EditText
         android:id="@+id/edtEmail"
         android:layout_width="match_parent"

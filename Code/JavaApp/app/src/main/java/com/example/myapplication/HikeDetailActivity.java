@@ -21,7 +21,6 @@ public class HikeDetailActivity extends AppCompatActivity implements Observation
     private Hike hike;
     private int hikeId;
 
-    // Views...
     private TextView detailHikeName, detailHikeLocation, detailHikeDate, detailHikeParking, detailHikeLength, detailHikeDifficulty, detailHikeDescription, detailHikeWeather, detailHikeGroupSize;
     private Button btnAddObservation;
     private RecyclerView recyclerViewObservations;
