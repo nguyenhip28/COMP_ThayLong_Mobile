@@ -8,7 +8,7 @@ public class Observation {
     private String additionalComments;
     private int hikeId;
 
-    // Constructor
+
     public Observation(int id, String observationText, String timeOfObservation, String additionalComments, int hikeId) {
         this.id = id;
         this.observationText = observationText;
@@ -17,7 +17,7 @@ public class Observation {
         this.hikeId = hikeId;
     }
 
-    // Getters and Setters
+
     public int getId() {
         return id;
     }
