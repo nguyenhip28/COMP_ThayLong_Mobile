@@ -164,7 +164,7 @@ class _HikeEntryPageState extends State<HikeEntryPage> {
           ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Hike saved!')));
         }
 
-        Navigator.pop(context, true); // trả true để reload danh sách
+        Navigator.pop(context, true);
       }
     }
   }

@@ -18,7 +18,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String TABLE_HIKES = "hikes";
     public static final String TABLE_OBSERVATIONS = "observations";
 
-    // Hike Table Columns
+
     public static final String KEY_HIKE_ID = "id";
     public static final String KEY_HIKE_NAME = "name";
     public static final String KEY_HIKE_LOCATION = "location";
@@ -30,14 +30,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String KEY_HIKE_WEATHER = "weather";
     public static final String KEY_HIKE_GROUP_SIZE = "group_size";
 
-    // Observation Table Columns
+
     public static final String KEY_OBSERVATION_ID = "id";
     public static final String KEY_OBSERVATION_TEXT = "observation_text";
     public static final String KEY_OBSERVATION_TIME = "time_of_observation";
     public static final String KEY_OBSERVATION_COMMENT = "additional_comments";
     public static final String KEY_OBSERVATION_HIKE_ID = "hike_id";
 
-    // Hike Table Create Statement
+
     private static final String CREATE_TABLE_HIKES = "CREATE TABLE " + TABLE_HIKES + "(" +
             KEY_HIKE_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
             KEY_HIKE_NAME + " TEXT NOT NULL," +
@@ -50,7 +50,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             KEY_HIKE_WEATHER + " TEXT," +
             KEY_HIKE_GROUP_SIZE + " INTEGER)";
 
-    // Observation Table Create Statement
+
     private static final String CREATE_TABLE_OBSERVATIONS = "CREATE TABLE " + TABLE_OBSERVATIONS + "(" +
             KEY_OBSERVATION_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
             KEY_OBSERVATION_TEXT + " TEXT NOT NULL," +

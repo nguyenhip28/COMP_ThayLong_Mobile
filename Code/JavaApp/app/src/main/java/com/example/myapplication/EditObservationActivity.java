@@ -76,7 +76,7 @@ public class EditObservationActivity extends AppCompatActivity {
 
         databaseHelper.updateObservation(observationId, newObservationText, newComment);
         Toast.makeText(this, "Observation updated!", Toast.LENGTH_SHORT).show();
-        finish(); // Go back to the detail screen
+        finish();
     }
 
     @Override

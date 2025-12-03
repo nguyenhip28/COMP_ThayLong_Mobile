@@ -20,7 +20,7 @@ class HikeDetailPage extends StatelessWidget {
                 MaterialPageRoute(builder: (_) => HikeEntryPage(hikeToEdit: hike)),
               );
               if (updated == true && context.mounted) {
-                Navigator.pop(context, true); // trả về true cho HikeListPage reload
+                Navigator.pop(context, true);
               }
             },
           ),
